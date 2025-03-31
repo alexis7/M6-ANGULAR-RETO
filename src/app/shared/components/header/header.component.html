@@ -1,0 +1,15 @@
+<header>
+    <div class="header-container">
+      <nav>
+        <menu>
+          <li *ngFor="let item of menuItems">{{item}}</li>
+        </menu>
+      </nav>
+      <div>
+        <button>Transparencia</button>
+        <button id="get-started">Consumidor</button>
+        <button id="get-started" (click)="redirectToLogin()">Salir</button>
+      </div>
+    </div>
+  </header>
+  

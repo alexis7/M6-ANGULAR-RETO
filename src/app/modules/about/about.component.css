@@ -1,0 +1,55 @@
+section {
+    display: flex;
+    max-width: 1040px;
+    margin: 50px auto;
+  }
+  
+  h2 {
+    font-family: "Charlie Display", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  
+  #carrousel {
+    display: block; 
+    height: auto;
+    max-width: 400px;
+
+  }
+
+  #abut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1040px;
+  }
+
+
+  #buttonDescargar{
+    background-color: #fdda24;
+    border-radius: 25px; /* Hace el recuadro más redondeado */
+    border: none; /* Quita el borde */
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 10px; /* Añade espacio entre los botones */
+    cursor: pointer;
+  }
+
+  #buttonActivar{
+    background-color: transparent;
+    border-radius: 25px; /* Hace el recuadro más redondeado */
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 10px; /* Añade espacio entre los botones */
+    border: 1px solid #0a0a0a; /* Añade un borde amarillo */
+    cursor: pointer;
+  }

@@ -1,0 +1,21 @@
+<h3>Historial de transacciones</h3>
+<div class="table-container">
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Tipo</th>
+      <th>Monto</th>
+      <th>Fecha</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaccion of transacciones">
+      <td>{{ transaccion.id }}</td>
+      <td>{{ transaccion.tipo }}</td>
+      <td>{{ transaccion.monto }}</td>
+      <td>{{ transaccion.fecha }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

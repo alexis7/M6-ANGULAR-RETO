@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div id="bienvenido">
+  <img src="https://www.bancolombia.com/wcm/connect/a67af2d6-c768-4f4f-a33b-fd58074f7ce9/logo-bancolombia-black.svg?MOD=AJPERES" alt="Logo Bancolombia">
+</div>
+<div id="conainer-principal">
+  <div class="card-container">
+    <div class="card" *ngFor="let item of items">
+      <img [src]="item.image" alt="Imagen de {{ item.title }}" class="card-img">
+      <div class="card-content">
+        <h3>{{ item.title }}</h3>
+        <button (click)="handleClick(item)">Ver más</button>
+      </div>
+    </div>
+  </div>
+  <app-operations *ngIf="mostrarDiv" class="app-history"></app-operations>
+  <app-history  *ngIf="history" class="app-history"></app-history>
+  <app-transation *ngIf="dSucursal" class="app-history"></app-transation>
+</div>
+<app-footer></app-footer>

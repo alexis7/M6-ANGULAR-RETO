@@ -1,0 +1,100 @@
+/* Contenedor principal del login */
+.login-container {
+  display: flex; /* Utiliza flexbox para el diseño */
+  justify-content: center; /* Centra horizontalmente los elementos hijos */
+  align-items: center; /* Centra verticalmente los elementos hijos */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  background-color: #f4f4f4; /* Color de fondo gris claro */
+}
+
+/* Tarjeta del login */
+.login-card {
+  background: white; /* Fondo blanco */
+  padding: 20px; /* Espaciado interno de 20px */
+  border-radius: 8px; /* Bordes redondeados de 8px */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  text-align: center; /* Texto centrado */
+  width: 320px; /* Ancho fijo de 320px */
+}
+
+/* Estilo del título */
+h2 {
+  font-size: 18px; /* Tamaño de fuente de 18px */
+  color: #0033A0; /* Color azul */
+  margin-bottom: 15px; /* Margen inferior de 15px */
+}
+
+/* Estilo de las etiquetas */
+label {
+  display: block; /* Se comporta como un bloque */
+  margin: 10px 0 5px; /* Margen superior de 10px, inferior de 5px */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo de los campos de entrada */
+input {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  padding: 8px; /* Espaciado interno de 8px */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes redondeados de 4px */
+}
+
+/* Estilo de los mensajes de error */
+.error {
+  color: red; /* Texto rojo */
+  font-size: 12px; /* Tamaño de fuente de 12px */
+  margin-top: 5px; /* Margen superior de 5px */
+}
+
+/* Estilo de los botones */
+button {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  padding: 10px 30px; /* Espaciado interno de 10px vertical y 30px horizontal */
+  background: #FFD200; /* Fondo amarillo */
+  color: #050505; /* Texto negro */
+  font-weight: bold; /* Texto en negrita */
+  border: none; /* Sin borde */
+  border-radius: 20px; /* Bordes redondeados de 20px */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+  margin-top: 15px; /* Margen superior de 15px */
+}
+
+/* Estilo de los botones deshabilitados */
+button:disabled {
+  background-color: #e2e2e0; /* Fondo gris claro */
+  border-radius: 20px; /* Bordes redondeados de 20px */
+  cursor: not-allowed; /* Cursor de no permitido */
+}
+
+/* Estilo del enlace de "Olvidé mi contraseña" */
+.forgot-password {
+  margin-top: 10px; /* Margen superior de 10px */
+  font-size: 12px; /* Tamaño de fuente de 12px */
+  color: black; /* Texto negro */
+  text-decoration: none; /* Sin subrayado */
+}
+
+
+.alert-error {
+  background-color: #ffdddd; /* Fondo rojo claro */
+  border: 1px solid #ff0000; /* Borde rojo */
+  color: #a10000; /* Texto rojo oscuro */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

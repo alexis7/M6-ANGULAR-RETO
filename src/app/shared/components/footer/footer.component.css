@@ -1,0 +1,26 @@
+.footer {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 300px;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+  }
+  

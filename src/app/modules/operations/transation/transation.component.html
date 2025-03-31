@@ -1,0 +1,17 @@
+<h3>{{title}}</h3>
+<div class="container">
+    <form [formGroup]="montoForm" (ngSubmit)="enviarFormulario()">
+      <label for="monto">Monto:</label>
+      <input type="text" id="monto" formControlName="monto" placeholder="Ingrese el monto">
+      
+      <div class="error" *ngIf="montoForm.controls['monto'].invalid && montoForm.controls['monto'].touched">
+        <small *ngIf="montoForm.controls['monto'].hasError('required')">El monto es obligatorio</small>
+        <small *ngIf="montoForm.controls['monto'].hasError('min')">Debe ser mayor a 0</small>
+        <small *ngIf="montoForm.controls['monto'].hasError('pattern')">Formato inválido</small>
+      </div>
+  
+      <button type="submit" [disabled]="montoForm.invalid">Enviar</button>
+    </form>
+  </div>
+
+

@@ -1,0 +1,54 @@
+header {
+    background-color: #ffffff;
+  }
+  
+  .header-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 15px;
+  }
+  
+  menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  
+  li {
+    font-size: 17px;
+  }
+  
+  #btn-tramites {
+    font-family: inherit;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    padding-inline: 20px;
+  }
+
+  #transaccional{
+    background-color: #fdda24;
+    padding: 5px 10px;
+    border-radius: 20px; /* Hace el recuadro más redondeado */
+  }
+
+  #btn-sucursal{
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #fff;     /* Borde de 2px de color azul */
+    padding: 10px 20px;
+    background-color: #fff;
+    font-size: 16px;
+    border-radius: 4px;              /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
